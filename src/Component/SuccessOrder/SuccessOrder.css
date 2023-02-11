@@ -1,0 +1,22 @@
+.successOrder{
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+
+@media only screen and (max-width:768px){
+    .successOrder h1{
+        font-size: 21px;
+    }
+    .successOrder h5{
+        font-size: 18px;
+    }
+    .successOrder h3{
+        font-size: 19px;
+    }
+}

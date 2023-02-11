@@ -1,0 +1,162 @@
+.homeBanner{
+    background-image: url("../../images/logo/hero4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top 0% right 40%;
+    height: 100vh;
+    padding: 0px 50px;
+    margin-top: 90px;
+}
+.ShopBanner{
+    margin-top: 90px;
+    background-image: url("../../images/banner/b16.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top 0% right 40%;
+    height: 60vh;
+    padding: 0px 50px; 
+}
+.shopBtn{
+    display: none;
+}
+ .shopText{
+    text-align: center;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+ }
+ .shopText h3{
+    font-size: 40px;
+    color: crimson;
+ }
+.homeText{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.homeText h5{
+    color: #099090;
+    text-transform: uppercase;
+}
+.homeText h3{
+    text-transform: capitalize;
+    color: #4444ff;
+    font-weight: 800;
+    font-size: 30px;
+}
+.homeText p{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.homeBtn{
+    outline: none;
+    color: #202525;
+    border: none;
+    font-weight: 700;
+    color: white;
+    background-color: #4444ff;
+    border-radius: 30px 0px 30px 0px;
+    padding: 20px 30px;
+    transition: .5s;
+}
+
+.homeBtn:hover{
+    color: black;
+    border-radius: 0px 30px 0px 30px;
+}
+
+/* blog banner */
+ .blogBanner{
+    background-image: url("../../images/banner/b6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top 0% right 40%;
+    height: 60vh;
+    padding: 0px 50px;
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+ }
+ .blog-container h3{
+    font-size: 40px;
+    font-weight: 800;
+    color: black;
+    text-transform: uppercase;
+ }
+ .blog-container p{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: black;
+ }
+.blogBtn{
+    display: none;
+}
+
+.aboutBaner{
+    
+    background-image: url("../../images/about/banner.png"); 
+    margin-top: 90px;
+}
+.about-page h3{
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.contactBanner{
+    background-image: url("../../images/banner/b1.jpg"); 
+    margin-top: 90px;
+}
+
+.about-page p{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.contact-page h3{
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.contact-page p{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+ /* resoponsive css code here */
+@media only screen and (max-width:768px){
+    .homeBanner {
+        background-image: url("../../images/logo/hero4.png"); 
+        background-position: top 0% right 46%;
+        padding: 46px 25px; 
+    }
+    .homeText h3 { 
+        font-weight: 700;
+        font-size: 23px;
+    }
+    .blogBanner{
+        margin-top: -12px;
+        text-align: center;
+    }
+    .blogBanner h3{
+        color: white;
+    }
+    .blogBanner p{
+        color: whitesmoke;
+    }
+    .homeText p {
+        font-size: 16px; 
+    }
+    .homeBtn { 
+        padding: 12px 20px; 
+    }
+    .shopText h3{
+        font-size: 30px;
+        color: crimson;
+        text-transform: uppercase;
+     }
+}

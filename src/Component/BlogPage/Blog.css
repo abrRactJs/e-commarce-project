@@ -1,0 +1,16 @@
+ .blog-container{
+    margin-top: 50px; 
+ }
+ .blog{
+    margin-top: 50px;
+    padding: 0px 50px;
+ }
+
+ @media only screen and (max-width:768px){
+    .blog-container{
+        margin-top: 100px; 
+     }
+    .blog{ 
+        padding: 0px 20px;
+     }
+ }
