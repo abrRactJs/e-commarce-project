@@ -33,7 +33,7 @@ const CartCounter = (props) => {
             <h5 className='my-3'>Total Price : {totalPrice + shipping + vat} </h5>
             {totalPrice !== 0 ?
                 <Link to="/successOrder">
-                    <button className='btn btn-success mt-2 w-100'>Place Order</button>
+                    <button className='btn btn-success mt-2 w-100'>Procced Checkout</button>
                 </Link>
                 : <button className='btn btn-danger mt-2 w-100'>Empty Items</button>
             }

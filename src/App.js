@@ -13,6 +13,8 @@ import Newslater from './Component/Newslater/Newslater'
 import Blog from './Component/BlogPage/Blog'; 
 import About from './Component/About/About';
 import Contact from './Component/Contact/Contact';
+import Login from './Component/LoginPage/Login';
+import Shipment from './Component/Shipment/Shipment';
 
 
 export const cartContext = createContext();
@@ -31,6 +33,8 @@ const App = () => {
            <Route path='/cart' element={<Cart/>} /> 
            <Route path='/blog' element={<Blog/>} /> 
            <Route path='/about' element={<About/>} /> 
+           <Route path='/shipment' element={<Shipment/>} />  
+           <Route path='/login' element={<Login/>} /> 
            <Route path='/contact' element={<Contact/>} /> 
            <Route path='/details/:id' element={<Details/>} />  
            <Route path='/*' element={<Error/>} />
