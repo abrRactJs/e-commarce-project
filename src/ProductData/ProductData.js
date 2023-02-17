@@ -1,5 +1,5 @@
 const ProductData = [
-    {   id:1,
+    {   id:"1",
         name: "product no 1",
         title: "Super Value Deal On All Product",
         price: 299,
@@ -8,7 +8,7 @@ const ProductData = [
         img: "products/f1.jpg"
     },
     {
-        id:2,
+        id:"2",
         name: "product no 2",
         title: " Value Deal On All Product",
         price: 249,
@@ -17,7 +17,7 @@ const ProductData = [
         img: "products/f2.jpg"
     },
     {
-        id:3,
+        id:"3",
         name: "product no 3",
         title: "Super Value Deal On All Product",
         price: 189,
@@ -26,7 +26,7 @@ const ProductData = [
         img: "products/f3.jpg"
     },
     {
-        id:4,
+        id:"4",
         name: "product no 4",
         title: "Super Value Deal On All Product",
         price: 300,
@@ -36,7 +36,7 @@ const ProductData = [
     },
 
     {
-        id:5,
+        id:"5",
         name: "product no 5",
         title: "Super Value Deal On All Product",
         price: 321,
@@ -46,7 +46,7 @@ const ProductData = [
     },
 
     {
-        id:6,
+        id:"6",
         name: "product no 6",
         title: "Super Value Deal On All Product",
         price: 121,
@@ -56,7 +56,7 @@ const ProductData = [
     },
 
     {
-        id:7,
+        id:"7",
         name: "product no 7",
         title: "Super Value Deal On All Product",
         price: 99,
@@ -65,7 +65,7 @@ const ProductData = [
         img: "products/f7.jpg"
     },
     {
-        id:8,
+        id:"8",
         name: "product no 8",
         title: "Super Value Deal On All Product",
         price: 299,
@@ -75,7 +75,7 @@ const ProductData = [
     },
 
     {
-        id:9,
+        id:"9",
         name: "product no 9",
         title: "Super Value Deal On All Product",
         price: 156,
@@ -84,7 +84,7 @@ const ProductData = [
         img: "products/n1.jpg"
     },
     {
-        id:10,
+        id:"10",
         name: "product no 10",
         title: "Super Value Deal On All Product",
         price: 499,
@@ -94,7 +94,7 @@ const ProductData = [
     },
 
     {
-        id:11,
+        id:"11",
         name: "product no 11",
         title: "Super Value Deal On All Product",
         price: 321,
@@ -104,7 +104,7 @@ const ProductData = [
     },
 
     {
-        id:12,
+        id:"12",
         name: "product no 12",
         title: "Super Value Deal On All Product",
         price: 321,
@@ -114,7 +114,7 @@ const ProductData = [
     },
 
     {
-        id:13,
+        id:"13",
         name: "product no 13",
         title: "Super Value Deal On All Product",
         price: 219,
@@ -123,7 +123,7 @@ const ProductData = [
         img: "products/f4.jpg"
     },
     {
-        id:14,
+        id:"14",
         name: "product no 11",
         title: "Super Value Deal On All Product",
         price: 321,
@@ -133,7 +133,7 @@ const ProductData = [
     },
 
     {
-        id:15,
+        id:"15",
         name: "product no 11",
         title: "Super Value Deal On All Product",
         price: 321,
@@ -142,7 +142,7 @@ const ProductData = [
         img: "products/n6.jpg"
     },
     {
-        id:16,
+        id:"16",
         name: "product no 11",
         title: "Super Value Deal On All Product",
         price: 321,
@@ -151,7 +151,7 @@ const ProductData = [
         img: "products/n7.jpg"
     },
     {
-        id:17,
+        id:"17",
         name: "product no 11",
         title: "Super Value Deal On All Product",
         price: 321,
@@ -160,7 +160,7 @@ const ProductData = [
         img: "products/n8.jpg"
     },
     {
-        id:18,
+        id:"18",
         name: "product no 1",
         title: "Super Value Deal On All Product",
         price: 299,
@@ -169,7 +169,7 @@ const ProductData = [
         img: "products/f1.jpg"
     },
     {
-        id:19,
+        id:"19",
         name: "product no 2",
         title: " Value Deal On All Product",
         price: 249,
@@ -178,7 +178,7 @@ const ProductData = [
         img: "products/f2.jpg"
     },
     {
-        id:20,
+        id:"20",
         name: "product no 3",
         title: "Super Value Deal On All Product",
         price: 189,
@@ -187,7 +187,7 @@ const ProductData = [
         img: "products/f3.jpg"
     },
     {
-        id:21,
+        id:"21",
         name: "product no 4",
         title: "Super Value Deal On All Product",
         price: 300,
@@ -197,7 +197,7 @@ const ProductData = [
     },
 
     {
-        id:22,
+        id:"22",
         name: "product no 5",
         title: "Super Value Deal On All Product",
         price: 321,
@@ -206,7 +206,7 @@ const ProductData = [
         img: "products/f5.jpg"
     },
     {
-        id:23,
+        id:"23",
         name: "product no 8",
         title: "Super Value Deal On All Product",
         price: 299,
@@ -216,7 +216,7 @@ const ProductData = [
     },
 
     {
-        id:24,
+        id:"24",
         name: "product no 9",
         title: "Super Value Deal On All Product",
         price: 156,
@@ -225,7 +225,7 @@ const ProductData = [
         img: "products/n1.jpg"
     },
     {
-        id:25,
+        id:"25",
         name: "product no 10",
         title: "Super Value Deal On All Product",
         price: 499,
@@ -235,7 +235,7 @@ const ProductData = [
     },
 
     {
-        id:26,
+        id:"26",
         name: "product no 11",
         title: "Super Value Deal On All Product",
         price: 321,
@@ -244,7 +244,7 @@ const ProductData = [
         img: "products/n3.jpg"
     },
     {
-        id:27,
+        id:"27",
         name: "product no 12",
         title: "Super Value Deal On All Product",
         price: 321,
@@ -254,7 +254,7 @@ const ProductData = [
     },
 
     {
-        id:28,
+        id:"28",
         name: "product no 13",
         title: "Super Value Deal On All Product",
         price: 219,
@@ -263,7 +263,7 @@ const ProductData = [
         img: "products/f4.jpg"
     },
     {
-        id:29,
+        id:"29",
         name: "product no 11",
         title: "Super Value Deal On All Product",
         price: 321,
@@ -272,7 +272,7 @@ const ProductData = [
         img: "products/n5.jpg"
     },
     {
-        id:30,
+        id:"30",
         name: "product no 4",
         title: "Super Value Deal On All Product",
         price: 300,
@@ -282,7 +282,7 @@ const ProductData = [
     },
 
     {
-        id:31,
+        id:"31",
         name: "product no 5",
         title: "Super Value Deal On All Product",
         price: 321,
@@ -291,7 +291,7 @@ const ProductData = [
         img: "products/f5.jpg"
     },
     {
-        id:32,
+        id:"32",
         name: "product no 8",
         title: "Super Value Deal On All Product",
         price: 299,

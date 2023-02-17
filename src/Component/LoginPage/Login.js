@@ -7,7 +7,7 @@ import LoginForm from './LoginForm';
 import SignUpForm from './SignUpForm';
 import { FaGoogle } from "react-icons/fa";
 import { loggdInContext } from '../../App';
-import { Navigate, useLocation } from 'react-router-dom';
+import { Navigate, useLocation, useNavigate } from 'react-router-dom';
 
 const app = initializeApp(firebaseConfig);
 const provider = new GoogleAuthProvider();
@@ -16,7 +16,7 @@ const auth = getAuth();
 const Login = () => {
     const [newUser, setNewUser] = useState(false)
     const [loggedInUser, setLoggedInUser] = useContext(loggdInContext)
- 
+    const nevigate = useNavigate();
     const [user, setUser] = useState({
         isSignIn: false,
         name: "",
@@ -105,6 +105,7 @@ const Login = () => {
                     newUserInfo.success = true;
                     setUser(newUserInfo)
                     setLoggedInUser(newUserInfo)
+                    nevigate("/Shipment", {replace : true})
                     console.log("profile updated 12", res._tokenResponse)
                 })
                 .catch((error) => {

@@ -4,11 +4,9 @@
     background-size: cover;
     background-position: top 0% right 40%;
     height: 100vh;
-    padding: 0px 50px;
-    margin-top: 90px;
+    padding: 0px 50px; 
 }
-.ShopBanner{
-    margin-top: 90px;
+.ShopBanner{ 
     background-image: url("../../images/banner/b16.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -75,8 +73,8 @@
     background-size: cover;
     background-position: top 0% right 40%;
     height: 60vh;
-    padding: 0px 50px;
-    margin-top: 90px;
+    margin-top: 0px;
+    padding: 0px 50px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,9 +97,7 @@
 }
 
 .aboutBaner{
-    
     background-image: url("../../images/about/banner.png"); 
-    margin-top: 90px;
 }
 .about-page h3{
     font-size: 40px;
@@ -110,8 +106,7 @@
 }
 
 .contactBanner{
-    background-image: url("../../images/banner/b1.jpg"); 
-    margin-top: 90px;
+    background-image: url("../../images/banner/b1.jpg");  
 }
 
 .about-page p{

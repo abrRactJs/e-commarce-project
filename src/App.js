@@ -30,7 +30,6 @@ const App = () => {
       <loggdInContext.Provider value={[loggedInUser, setLoggedInUser]}>
         <BrowserRouter>
           <Header></Header>
-          <h3 style={{ marginTop: "200px" }}>Email : {loggedInUser.email}</h3>
           <Routes>
             <Route path='/home' element={<Home />} />
             <Route path='/' element={<Home />} />
@@ -39,9 +38,6 @@ const App = () => {
             <Route path='/cart' element={<Cart />} />
             <Route path='/blog' element={<Blog />} />
             <Route path='/about' element={<About />} />
-
-
-
             <Route path='/shipment'
               element={<PrivetRoute>
                 <Shipment></Shipment>
