@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { initializeApp } from 'firebase/app';
 import { GoogleAuthProvider, getAuth, signInWithPopup, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
 import './Login.css'
@@ -6,6 +6,8 @@ import firebaseConfig from '../../firebase.config';
 import LoginForm from './LoginForm';
 import SignUpForm from './SignUpForm';
 import { FaGoogle } from "react-icons/fa";
+import { loggdInContext } from '../../App';
+import { Navigate, useLocation } from 'react-router-dom';
 
 const app = initializeApp(firebaseConfig);
 const provider = new GoogleAuthProvider();
@@ -13,8 +15,8 @@ const auth = getAuth();
 
 const Login = () => {
     const [newUser, setNewUser] = useState(false)
-
-
+    const [loggedInUser, setLoggedInUser] = useContext(loggdInContext)
+ 
     const [user, setUser] = useState({
         isSignIn: false,
         name: "",
@@ -45,6 +47,7 @@ const Login = () => {
             }).catch((error) => {
                 const errorCode = error.code;
                 const errorMessage = error.message;
+                console.log(errorCode, errorMessage)
             });
 
     }
@@ -101,6 +104,7 @@ const Login = () => {
                     newUserInfo.error = "";
                     newUserInfo.success = true;
                     setUser(newUserInfo)
+                    setLoggedInUser(newUserInfo)
                     console.log("profile updated 12", res._tokenResponse)
                 })
                 .catch((error) => {

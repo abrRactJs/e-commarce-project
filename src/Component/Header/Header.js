@@ -10,7 +10,7 @@ import { cartContext } from '../../App';
 function Header() {
     const [cart , setCart] = useContext(cartContext)
     return (
-        <div className="header fixed-top">
+        <div className="header sticky-top">
             <Navbar expand="md">
 
                 <Navbar.Brand href="#home">

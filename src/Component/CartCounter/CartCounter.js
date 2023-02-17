@@ -1,9 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'; 
+import { useNavigate } from 'react-router-dom';
 import './CartCounter.css'
 
 const CartCounter = (props) => {
     const cart = props.cart;
+   
+    const history = useNavigate();
+    const handleChackOut = ()=>{
+        history("/shipment")
+    }
+
 
     let totalPrice = 0;
     for (let i = 0; i < cart.length; i++) {
@@ -32,9 +38,9 @@ const CartCounter = (props) => {
             <h5>VAT & TAXT : {vat} BDT </h5>
             <h5 className='my-3'>Total Price : {totalPrice + shipping + vat} </h5>
             {totalPrice !== 0 ?
-                <Link to="/successOrder">
-                    <button className='btn btn-success mt-2 w-100'>Procced Checkout</button>
-                </Link>
+                 
+                    <button onClick={handleChackOut} className='btn btn-success mt-2 w-100'>Procced Checkout</button>
+                
                 : <button className='btn btn-danger mt-2 w-100'>Empty Items</button>
             }
         </div>
