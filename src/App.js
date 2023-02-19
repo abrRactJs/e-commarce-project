@@ -44,7 +44,7 @@ const App = () => {
               </PrivetRoute>}
             />
             <Route path='/login' element={<Login />} />
-            <Route path='/contact' element={<Contact />} />
+            <Route path='/contact' element={<Contact />} /> 
             <Route path='/details/:id' element={<Details />} />
             <Route path='/*' element={<Error />} />
           </Routes>

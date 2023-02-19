@@ -43,6 +43,12 @@ const Login = () => {
                     image: photoUrl
                 }
                 setUser(signInUser)
+                setLoggedInUser(signInUser)
+
+               if (signInUser.email) {
+                nevigate("/Shipment", { replace: true })
+               }
+
 
             }).catch((error) => {
                 const errorCode = error.code;
@@ -105,8 +111,7 @@ const Login = () => {
                     newUserInfo.success = true;
                     setUser(newUserInfo)
                     setLoggedInUser(newUserInfo)
-                    nevigate("/Shipment", {replace : true})
-                    console.log("profile updated 12", res._tokenResponse)
+                    nevigate("/Shipment", { replace: true })
                 })
                 .catch((error) => {
                     const errorMessage = error.message;
@@ -124,8 +129,8 @@ const Login = () => {
             displayName: name,
             photoURL: image,
         }).then(() => {
-            console.log("Profile updated!") 
-           
+            console.log("Profile updated!")
+
         }).catch((error) => {
             console.log(error);
         });
@@ -135,11 +140,11 @@ const Login = () => {
     return (
         <>
             <div className='login'>
-            <h5 className='text-danger mb-4 text-center text-capitalize'>Please login first then you can submit the order </h5>
+                <h5 className='text-danger mb-4 text-center text-capitalize'>Please login first then you can submit the order </h5>
                 <div className="signUpBtn my-3">
                     <button onClick={() => setNewUser(!newUser)} className='btn btn-outline-success'> {newUser ? "Sign In" : "Register"}</button>
                 </div>
-              
+
                 {newUser ?
                     <div className="loginForm">
                         <LoginForm

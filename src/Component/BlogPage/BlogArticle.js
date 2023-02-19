@@ -12,7 +12,7 @@ const BlogArticle = (props) => {
         <div className="blog-des">
             <h4>{title}</h4>
             <p>{des}</p>
-             <Link to={"/details/"+id}>{btn}</Link>
+             <Link>{btn}</Link>
         </div>
          </div>
     );
