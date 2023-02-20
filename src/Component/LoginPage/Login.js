@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { initializeApp } from 'firebase/app';
-import { GoogleAuthProvider, getAuth, signInWithPopup, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
+import { GoogleAuthProvider, getAuth, signInWithPopup, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile,sendEmailVerification } from "firebase/auth";
 import './Login.css'
 import firebaseConfig from '../../firebase.config';
 import LoginForm from './LoginForm';
@@ -45,9 +45,9 @@ const Login = () => {
                 setUser(signInUser)
                 setLoggedInUser(signInUser)
 
-               if (signInUser.email) {
-                nevigate("/Shipment", { replace: true })
-               }
+                if (signInUser.email) {
+                    nevigate("/Shipment", { replace: true })
+                }
 
 
             }).catch((error) => {
@@ -84,6 +84,13 @@ const Login = () => {
         setUser(newUser)
     }
 
+    const emailVerify = () => {
+        sendEmailVerification(auth.currentUser)
+            .then(() => {
+                console.log("send verifacation code")
+            });
+    }
+
     const handleFormSubmit = (e) => {
         if (newUser && user.email && user.password) {
             createUserWithEmailAndPassword(auth, user.email, user.password)
@@ -92,6 +99,7 @@ const Login = () => {
                     newUserInfo.error = "";
                     newUserInfo.success = true;
                     setUser(newUserInfo)
+                    emailVerify()
                     updateUser(user.name, user.image)
                 })
                 .catch((error) => {
